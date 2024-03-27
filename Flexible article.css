@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  border: 1px transparent black;
+  width: fit-content;
+  background-color: rgb(252, 196, 113, 0.2);
+  border-radius: 30px;
+}
+h1 {
+  margin-bottom: 10px; /* Aggiungi margine inferiore per separare il titolo dal paragrafo */
+}
+.image {
+  flex: 0 0 auto;
+  object-fit: cover;
+  padding: 30px;
+}
+
+.paragrafo {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column; /* Imposta il layout in colonna per il titolo e il paragrafo */
+
+  justify-content: center;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Layout in colonna per dimensioni dello schermo ridotte */
+  }
+
+  .image,
+  .paragrafo {
+    order: 1; /* Cambia l'ordine dei due elementi */
+  }
+
+  .image {
+    order: 2;
+    margin-top: 20px; /* Aggiungi spazio sopra l'immagine */
+  }
+}

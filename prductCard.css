@@ -1,0 +1,44 @@
+.card {
+  border: 2px none rgb(0, 0, 0);
+  background-color: white;
+  width: 300px; /* Imposta la larghezza desiderata per la card */
+  border-radius: 50px; /* Riduci il raggio del bordo arrotondato */
+  overflow: hidden; /* Assicura che l'immagine non si estenda oltre il bordo arrotondato */
+  margin: 10px; /* Aggiusta il margine della card */
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.card-body {
+  padding: 20px;
+  background-color: rgb(252, 196, 113, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(71, 41, 0);
+}
+
+.bottone {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: yellow;
+  background-color: rgb(228, 191, 29);
+  font-size: 15px;
+  border-radius: 80px;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.money {
+  text-align: end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
